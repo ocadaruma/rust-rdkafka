@@ -54,7 +54,7 @@ ssl = ["openssl-sys"]
 ssl-vendored = ["ssl", "openssl-sys/vendored"]
 
 # Enable SASL GSSAPI support with Cyrus libsasl2.
-gssapi = ["ssl", "sasl2-sys"]
+gssapi = ["ssl-vendored", "sasl2-sys"]
 
 # Build and link against the libsasl2 bundled with the sasl2-sys crate.
 gssapi-vendored = ["gssapi", "sasl2-sys/gssapi-vendored"]
